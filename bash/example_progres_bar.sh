@@ -3,10 +3,10 @@
 . progress_bar.sh
 
 PROJECTS_TO_PULL=(
-	"sample_proj_x"
-	"sample_isa_2"
-	"sample_isa_4"
-	"sample_isa_3"
+				"sample_proj_x"
+				"sample_isa_2"
+				"sample_isa_4"
+				"sample_isa_3"
         "sample_isa_1"
         "sample_isa_5"
         "sample_isa_6"
