@@ -1,0 +1,29 @@
+#
+# DOR3 - Wstęp do wirtualizacji - projekt
+#
+
+# WORKSHOP
+
+1. Utworzyć 3 maszyny przy użyciu pliku Vagrantfile
+   - nadać nazwy VM1 oraz workers: VM2 , VM3
+   - maszyna VM1 bedzie pełnić rolę revers proxy dla VM2 i VM3
+   - stworzyć połączenie VM1-3 siecią prywatną
+
+   # https://www.vagrantup.com/docs/multi-machine
+
+   paramerty:
+   VM1: mem:512M
+   VM2-3: mem: 1024M
+
+2. Uruchomić nginx jako revers proxy na VM1
+   - przekierować port 80 do hosta 20080 
+   - utworzyć konfigurację
+
+3. Uruchmocić usługę nginx/apache2 na VM2-3
+   - apache2 
+     - połączenie www wyświetlało:  HELLO $hostname
+
+4. Zmiana konfiguracji nginx na revers-proxy i podpięcie worker1 i worker2 
+   test połączenia www http://127.0.0.1:20080
+   (oczekiwany wynik to naprzemienie połączenie do vm1 i wyświetlnie hostname i vm2...)
+
