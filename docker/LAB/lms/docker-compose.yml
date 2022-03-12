@@ -4,13 +4,17 @@ services:
   db:
     image: mysql:5.7
     restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: infoshare
-      MYSQL_DATABASE: lms
-      MYSQL_USER: lms
-      MYSQL_PASSWORD: lms-pass
+    #environment:
+    #  MYSQL_ROOT_PASSWORD: infoshare
+    #  MYSQL_DATABASE: lms
+    #  MYSQL_USER: lms
+    #  MYSQL_PASSWORD: lms-pass
+    env_file:
+      - .env.lms
     ports:
       - "3306:3306"
+    volumes:
+      - sqldata:/var/lib/mysql:rw
 
   lms:
     depends_on:
@@ -19,11 +23,29 @@ services:
     ports:
       - "80:80"
     restart: always
-    environment:
-      SQL_TYPE: mysql
-      MYSQL_HOST: db
-      MYSQL_DATABASE: lms
-      MYSQL_USER: lms
-      MYSQL_PASS: lms-pass
+    env_file:
+      - .env.lms
+    #environment:
+    #  SQL_TYPE: mysql
+    #  MYSQL_HOST: db
+    #  MYSQL_DATABASE: lms
+    #  MYSQL_USER: lms
+    #  MYSQL_PASS: lms-pass
     links:
       - db
+    volumes:
+      - lmsdata:/usr/share/lms/documents:rw
+  
+volumes:
+  lmsdata:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/storage/lms'
+  sqldata:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/storage/mysql'
