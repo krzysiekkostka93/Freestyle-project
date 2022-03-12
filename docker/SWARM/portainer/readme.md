@@ -7,5 +7,5 @@ curl -L https://downloads.portainer.io/portainer-agent-stack.yml \
 # Start app portainer
 docker stack deploy -c portainer-agent-stack.yml portainer
 
-# WEB
+# WEB (host)
 https://127.0.0.1:29443/
