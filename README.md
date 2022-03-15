@@ -7,4 +7,6 @@
 |12-02-2022| Podstawy nginx                               | Krzysztof Bender       |                                             | | |
 |19-02-2022| Wstęp do wirtualizacji                       | Łukasz Pieczonka       | [pdf](./slides/Wstęp%20do%20wirtualzacji.pdf) | ./vagrant |[til](https://github.com/infoshareacademy/dor3-til/blob/master/vagrant.md)|
 |22-02-2022| Konteneryzacja aplikacji w środowisku Docker | Łukasz Pieczonka       | [pdf](./slides/Konteneryzacja%20aplikacji%20w%20środowisku%20Docker.pdf) |  |  |
+|12-03-2022| Docker-compose                               | Łukasz Pieczonka       | [pdf](./slides/Docker-compose.pdf) |  |  |
+
 
