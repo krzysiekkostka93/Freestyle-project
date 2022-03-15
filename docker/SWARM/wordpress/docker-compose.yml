@@ -28,6 +28,9 @@ services:
 
   nginx-proxy:
     image: nginx
+    depends_on:
+      - wordpress
+      - phpmyadmin
     ports:
       - 80:8080
     volumes:
@@ -43,12 +46,14 @@ services:
       - db
     image: wordpress:5.9.2-php7.4-apache
     volumes:
-      - wordpress_data:/var/www/html
+      - wordpress_data:/var/www/html/wp-content
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_WEBSITE_URL: "http://127.0.0.1:20080"
+      WORDPRESS_WEBSITE_URL_WITHOUT_HTTP: "127.0.0.1:20080"
     deploy:
       mode: replicated
       replicas: 1
