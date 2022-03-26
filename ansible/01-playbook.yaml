@@ -1,8 +1,15 @@
 ---
 - hosts: all
-  become: yes
 
   tasks:
     - ping:
-    - reboot:
-
+    - name: Tworzy pliczek
+      file:
+        path: /home/vagrant/pliczek
+        owner: vagrant
+        state: touch
+    - name: Stwórz poufne_dane_klienta
+      ansible.builtin.file:
+        path: /home/vagrant/poufne_dane_klienta
+        owner: vagrant
+        state: touch
