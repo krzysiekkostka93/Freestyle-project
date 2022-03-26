@@ -1,0 +1,10 @@
+---
+- hosts: app_servers
+  become: true
+
+  roles:
+    - role: common
+      tags:
+        - bootstrap
+        - never
+    - web_server

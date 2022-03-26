@@ -1,0 +1,19 @@
+---
+- name: Update apt cache
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600
+  tags:
+    - bootstrap
+    - never
+
+- import_tasks: nginx.yaml
+
+#- name: Install {{ mysql_package_name }} package
+#  apt:
+#    name: "{{ mysql_package_name }}"
+#    state: latest
+#  tags:
+#    - bootstrap
+
+#- import_tasks: db.yaml
