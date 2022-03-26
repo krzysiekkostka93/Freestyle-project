@@ -8,6 +8,18 @@
 - name: Create an empty file
   copy:
     src: files/tajne
-    dest: "{{ data_path }}/tajne"
+    dest: "{{ data_path }}/{{ item.name }}"
     owner: "{{ ansible_user }}"
-    mode: 0600
+    mode: "{{ item.mode }}"
+  with_items: "{{ files_to_create }}"
+
+- name: Run ls -l
+  shell: ls -l
+  args:
+    chdir: "{{ data_path }}"
+  register: ls_result
+
+- name: Print ls line by line
+  debug:
+    var: item
+  with_items: "{{ ls_result.stdout_lines }}"
