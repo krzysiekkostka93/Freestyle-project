@@ -1,0 +1,13 @@
+---
+- name: Create directory
+  file:
+    state: directory
+    path: /home/vagrant/dane
+    owner: vagrant
+
+- name: Create an empty file
+  copy:
+    src: files/tajne
+    dest: /home/vagrant/dane/tajne
+    owner: vagrant
+    mode: 0600

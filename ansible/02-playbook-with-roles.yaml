@@ -4,4 +4,4 @@
   become_user: root
 
   roles:
-    - role: simple_common
+    - simple_common
