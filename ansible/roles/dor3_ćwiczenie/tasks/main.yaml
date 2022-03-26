@@ -2,12 +2,12 @@
 - name: Create directory
   file:
     state: directory
-    path: /home/vagrant/dane
-    owner: vagrant
+    path: "{{ data_path }}"
+    owner: "{{ ansible_user }}"
 
 - name: Create an empty file
   copy:
     src: files/tajne
-    dest: /home/vagrant/dane/tajne
-    owner: vagrant
+    dest: "{{ data_path }}/tajne"
+    owner: "{{ ansible_user }}"
     mode: 0600

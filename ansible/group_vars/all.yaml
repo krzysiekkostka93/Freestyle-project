@@ -1,0 +1,24 @@
+---
+data_path: "/home/{{ ansible_user }}/dane"
+
+mysql_package_name: mysql-server
+common_packages:
+  - git
+  - htop
+  - mc
+  - python3
+  - python3-pip
+  - vim
+  - tmux
+  - nano
+
+zmienna_2: wartość z group_vars/all.yaml
+
+# hasło do vault = wiosna
+postgres_password: !vault |
+                             $ANSIBLE_VAULT;1.1;AES256
+                             30616339643666333738663235396134336466626531623232666562646563663036313932323466
+                             3735613465396536393734333637343165623538623038610a333935386337363630376338633864
+                             34316136383933303465633034646636353562656635336564623030636233323461363630313931
+                             3837353437306533360a363930376664323863613265373936353065663337333132663766303935
+                             3465
