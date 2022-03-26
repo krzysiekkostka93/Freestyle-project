@@ -1,0 +1,15 @@
+---
+#- debug:
+#    var: ansible_host
+#- name: Fail on target1
+#  fail:
+#    msg: I dont like you, target1
+#  when: ansible_host == "192.168.56.11"
+
+- name: yum install
+  include_tasks: packages-yum.yaml
+  when: ansible_os_family == "RedHat"
+
+- name: apt install
+  include_tasks: packages-apt.yaml
+  when: ansible_os_family == "Debian"

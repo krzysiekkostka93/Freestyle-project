@@ -1,0 +1,10 @@
+---
+- hosts: target1
+
+  tasks:
+    - name: Just list files
+      shell: ls -a
+      register: result
+
+    - debug:
+        var: result
