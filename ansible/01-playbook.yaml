@@ -13,3 +13,8 @@
         path: /home/vagrant/poufne_dane_klienta
         owner: vagrant
         state: touch
+    - name: Install vim
+      package:
+        state: present
+        name: vim
+      become: yes
