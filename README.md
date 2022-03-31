@@ -4,7 +4,7 @@
 | ---- |----------------------------------------------|--------------------|------------------------------------------------------------------------------| ------- | ----- |
 |08-02-2022| Organizacyjna                                | Krzysztof Bender       | [pdf](./slides/iSA_DOR3_organizacyjna.pdf)                                   | | |
 |08-02-2022| Podstawy Linuxa                              | Krzysztof Bender       | [pdf](./slides/Podstawy%20Linux%20Cz.1.pdf)                                          | |[til](https://github.com/infoshareacademy/dor3-til/blob/master/linux.md)|
-|12-02-2022| Podstawy nginx                               | Krzysztof Bender       |                                            | | |
+|12-02-2022| Podstawy nginx                               | Krzysztof Bender       | [pdf](./slides/Podstawy%20Nginx.pdf)                                           | | |
 |19-02-2022| Wstęp do wirtualizacji                       | Łukasz Pieczonka       | [pdf](./slides/Wstęp%20do%20wirtualzacji.pdf) | [vagrant](./vagrant) |[til](https://github.com/infoshareacademy/dor3-til/blob/master/vagrant.md)|
 |22-02-2022| Konteneryzacja aplikacji w środowisku Docker | Łukasz Pieczonka       | [pdf](./slides/Konteneryzacja%20aplikacji%20w%20środowisku%20Docker.pdf) |  |  |
 |12-03-2022| Docker-compose                               | Łukasz Pieczonka       | [pdf](./slides/Docker-compose.pdf) |  |  |
