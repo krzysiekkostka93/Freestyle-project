@@ -9,6 +9,6 @@
 |22-02-2022| Konteneryzacja aplikacji w środowisku Docker | Łukasz Pieczonka       | [pdf](./slides/Konteneryzacja%20aplikacji%20w%20środowisku%20Docker.pdf) |  |  |
 |12-03-2022| Docker-compose                               | Łukasz Pieczonka       | [pdf](./slides/Docker-compose.pdf) |  |  |
 |19-03-2022| Architektura i narzędzia w systemach mikroserwisowych | Oleksii Tsyganov       | [P1](./slides/Microservices_arch_p1.pdf), [P2](./slides/Microservices_arch_p2.pdf) |  |  |
-|16-03-2022| Automatyzacja z wykorzystaniem Ansible | Jakub Andrzejewski       | [P1](./slides/DevOps-Ansible_1.pdf), [P2](./slides/DevOps-Ansible_2.pdf) |  |  |
+|26-03-2022| Automatyzacja z wykorzystaniem Ansible | Jakub Andrzejewski       | [P1](./slides/DevOps-Ansible_1.pdf), [P2](./slides/DevOps-Ansible_2.pdf) |  |  |
 
 
