@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+SECRET_NAME=db-password
+NAMESPACE=bookstack
+echo "Czy sekret istnieje?"
+([[ $(kubectl -n $NAMESPACE get secret $SECRET_NAME ) ]] && exit 0) || export PASSWORD=$(cat /dev/urandom | tr -dc '[:alpha:]' | fold -w ${1:-20} | head -n 1)
+echo $PASSWORD
+kubectl -n $NAMESPACE create secret generic $SECRET_NAME --from-literal=password=$PASSWORD
