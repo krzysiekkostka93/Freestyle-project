@@ -14,5 +14,5 @@
 | 23-04-2022 | Kubernetes - one, to rule them all - pt1              | Piotr Ignatowski    | [pdf](./slides/dor3-kubernetes-1.pdf)                                                       | | | 
 | 07-05-2022 | Kubernetes - one, to rule them all - pt2              | Piotr Ignatowski    | [pdf1](./slides/dor3-kubernetes-2.pdf) [pdf2](./slides/dor3-kubernetes-3.pdf)               | | |
 | 10-05-2022 | Kubernetes - projekt                                  | Piotr Ignatowski    | [pdf](./slides/kubernetes-projekt.pdf)                                                      | | |
-
+| 14-05-2022 | Systemy CI/CD                                 | Karol Kołodziejczyk    | [pdf](./slides/DevOps-CICD-DOR3.pdf)  
 
