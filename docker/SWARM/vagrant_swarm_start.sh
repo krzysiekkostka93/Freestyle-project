@@ -1,1 +1,0 @@
-AUTO_START_SWARM=true vagrant up
