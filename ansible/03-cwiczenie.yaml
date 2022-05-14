@@ -1,6 +1,0 @@
----
-- hosts: target1
-
-  roles:
-    - dor3_ćwiczenie
-

@@ -1,7 +1,0 @@
----
-- hosts: target1
-  become: false
-  tasks:
-    - name: Show facts
-      debug:
-        var: ansible_facts
